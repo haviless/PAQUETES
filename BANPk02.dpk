@@ -1,0 +1,60 @@
+package BANPk02;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  rbDAD77,
+  rbUSER77,
+  dbrtl,
+  dsnap,
+  rbRCL77,
+  VclSmp,
+  vclx,
+  ip4000clientvcl7,
+  ip4000v7,
+  bdertl,
+  vcldb,
+  fc4000v7,
+  rbDB77,
+  rbBDE77,
+  rbIDE77,
+  dclmid,
+  dcldb,
+  vcldesigner,
+  designide,
+  vclactnband,
+  designdgm,
+  dclstd,
+  dsnapcon,
+  BANPk00,
+  oaLIBConta,
+  oaSISPk8;
+
+contains
+  oaTE2000 in '..\BANCliente\oaTE2000.pas' {FRegistro};
+
+end.

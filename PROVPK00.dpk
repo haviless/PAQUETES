@@ -1,0 +1,61 @@
+package PROVPK00;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  vcljpg,
+  rbDBDE77,
+  rbDAD77,
+  tee,
+  dbrtl,
+  dsnap,
+  bdertl,
+  dsnapcon,
+  dclmid,
+  vcldb,
+  dcldb,
+  vcldesigner,
+  designide,
+  vclactnband,
+  vclx,
+  designdgm,
+  dclstd,
+  VclSmp,
+  dclOfficeXP,
+  ip4000clientvcl7,
+  ip4000v7,
+  rbRCL77,
+  rbDB77,
+  oaSISPk8,
+  fc4000v7,
+  rbBDE77,
+  rbIDE77;
+
+contains
+  PROV001 in '..\PROVCLIENTE\PROV001.pas' {FProveedor};
+
+end.

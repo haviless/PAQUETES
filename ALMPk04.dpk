@@ -1,0 +1,59 @@
+package ALMPk04;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  ip4000v7,
+  bdertl,
+  vcldb,
+  vclx,
+  fc4000v7,
+  rbDB77,
+  rbRCL77,
+  VclSmp,
+  rbBDE77,
+  rbIDE77,
+  dclmid,
+  dsnap,
+  dcldb,
+  vcldesigner,
+  designide,
+  vclactnband,
+  designdgm,
+  dclstd,
+  ip4000clientvcl7,
+  dsnapcon,
+  oaSISPk8,
+  ALMPk00,
+  ALMPk03,
+  DMmsgDlgs;
+
+contains
+  oaIN4000 in '..\ALMCliente\oaIN4000.pas' {FINConsultas};
+
+end.

@@ -1,0 +1,60 @@
+package CXCPk00;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  ip4000clientvcl7,
+  dsnap,
+  ip4000v7,
+  bdertl,
+  vcldb,
+  vclx,
+  fc4000v7,
+  dsnapcon,
+  dclmid,
+  dcldb,
+  vcldesigner,
+  designide,
+  vclactnband,
+  designdgm,
+  dclstd,
+  rbDB77,
+  rbRCL77,
+  VclSmp,
+  rbBDE77,
+  rbIDE77,
+  visualclx,
+  oaSISPk8,
+  oaLIBConta,
+  MaestroClientesPk00;
+
+contains
+  oaCC0000 in '..\CXCCliente\oaCC0000.pas' {FCCIni},
+  CxCDM in '..\CXCCliente\CxCDM.pas' {DMCXC: TDataModule};
+
+end.

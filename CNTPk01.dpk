@@ -1,0 +1,49 @@
+package CNTPk01;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  dclmid,
+  rbIDE77,
+  rbBDE77,
+  rbDB77,
+  dbrtl,
+  vclx,
+  ip4000v7,
+  bdertl,
+  vcldb,
+  dsnap,
+  ip4000clientvcl7,
+  rbRCL77,
+  VclSmp,
+  CNTPk00,
+  oaSISPk8;
+
+contains
+  oaCN1000 in '..\CNTCliente\oaCN1000.pas' {FParametros};
+
+end.

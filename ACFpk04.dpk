@@ -1,0 +1,57 @@
+package ACFpk04;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  ACFSGpk00,
+  vcl,
+  dbrtl,
+  fc4000v7,
+  vclx,
+  vcldb,
+  rbDB77,
+  rbRCL77,
+  VclSmp,
+  rbBDE77,
+  bdertl,
+  rbIDE77,
+  dclmid,
+  dsnap,
+  dcldb,
+  vcldesigner,
+  designide,
+  vclactnband,
+  designdgm,
+  dclstd,
+  ip4000clientvcl7,
+  ip4000v7,
+  dsnapcon,
+  oaSISPk8;
+
+contains
+  oaAF4000 in '..\ACFSGCliente\oaAF4000.pas' {FInformes};
+
+end.

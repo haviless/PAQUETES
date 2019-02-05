@@ -1,0 +1,62 @@
+package PLPk00;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  dsnap,
+  bdertl,
+  dsnapcon,
+  ip4000clientvcl7,
+  ip4000v7,
+  vcldb,
+  vclx,
+  fc4000v7,
+  rbDB77,
+  rbRCL77,
+  VclSmp,
+  rbBDE77,
+  rbIDE77,
+  dclmid,
+  dcldb,
+  vcldesigner,
+  designide,
+  vclactnband,
+  designdgm,
+  dclstd,
+  oaSISPk8,
+  oaLibConta,
+  visualclx,
+  dclOfficeXP,
+  dclOffice2k;
+
+contains
+  RRHHDM in '..\PLCliente\RRHHDM.pas' {DMPL: TDataModule},
+  PL0000 in '..\PLCliente\PL0000.pas' {FPLIni},
+  PL020 in '..\PLCliente\PL020.pas' {FCtrlAcceso};
+
+end.

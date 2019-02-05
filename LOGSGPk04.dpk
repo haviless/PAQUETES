@@ -1,0 +1,63 @@
+package LOGSGPk04;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  VclSmp,
+  vclx,
+  fc4000v7,
+  vcldb,
+  rbIDE77,
+  rbRCL77,
+  rbDB77,
+  rbBDE77,
+  bdertl,
+  dclmid,
+  dsnap,
+  dcldb,
+  vcldesigner,
+  designide,
+  vclactnband,
+  designdgm,
+  dclstd,
+  ip4000clientvcl7,
+  ip4000v7,
+  dsnapcon,
+  rbCT77,
+  rbDBDE77,
+  rbDAD77,
+  visualclx,
+  LOGSGPk00,
+  LOGSGPkRequis,
+  oaSISPk8,
+  DMmsgDlgs;
+
+contains
+  oaAD4000 in '..\LOGCliente\oaAD4000.pas' {FADProcesos};
+
+end.

@@ -1,0 +1,59 @@
+package BANPk04;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  dclmid,
+  rbIDE77,
+  rbBDE77,
+  rbDB77,
+  fc4000v7,
+  rbDAD77,
+  rbUSER77,
+  vcl,
+  dbrtl,
+  vclx,
+  vcldb,
+  rbRCL77,
+  VclSmp,
+  bdertl,
+  dsnap,
+  dcldb,
+  vcldesigner,
+  designide,
+  vclactnband,
+  designdgm,
+  dclstd,
+  ip4000clientvcl7,
+  ip4000v7,
+  dsnapcon,
+  BANPk00,
+  oaLIBConta;
+
+contains
+  oaTE4000 in '..\BANCliente\oaTE4000.pas' {FConsulta};
+
+end.

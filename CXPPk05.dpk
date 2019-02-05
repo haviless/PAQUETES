@@ -1,0 +1,64 @@
+package CXPPk05;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  dsnap,
+  ip4000clientvcl7,
+  ip4000v7,
+  bdertl,
+  vcldb,
+  vclx,
+  rbRCL77,
+  VclSmp,
+  rbDB77,
+  dsnapcon,
+  dclmid,
+  fc4000v7,
+  rbIDE77,
+  rbBDE77,
+  dcldb,
+  vcldesigner,
+  designide,
+  vclactnband,
+  designdgm,
+  dclstd,
+  CXPPk00,
+  oaLIBConta,
+  PROVPK00,
+  xtradev;
+
+contains
+  CXP009 in '..\CXPCliente\CXP009.pas' {FActAgRet},
+  CxP501 in '..\CXPCliente\CXP501.pas' {FTransfCOA},
+  CxP502 in '..\CXPCliente\CXP502.pas' {FCierreOpe},
+  Cxp503 in '..\CXPCliente\CXP503.pas' {FTransfPDT},
+  CxP504 in '..\CXPCliente\CXP504.pas' {FNuevoProv},
+  Cxp505 in '..\CXPCliente\CXP505.pas' {FTransfDAOT};
+
+end.

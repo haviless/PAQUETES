@@ -1,0 +1,52 @@
+package CNTPk00;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  dsnap,
+  dsnapcon,
+  ip4000clientvcl7,
+  ip4000v7,
+  bdertl,
+  vcldb,
+  vclx,
+  rbRCL77,
+  fc4000v7,
+  dclmid,
+  dclOfficeXP,
+  visualclx,
+  oaSISPk8,
+  oaLIBConta;
+
+contains
+  CNTDM in '..\CNTCliente\CNTDM.pas' {DMCNT: TDataModule},
+  oaCN0000 in '..\CNTCliente\oaCN0000.pas' {Form2},
+  CNT020 in '..\CNTCliente\CNT020.pas' {FCtrlAcceso};
+
+end.
+

@@ -1,0 +1,57 @@
+package MaestroClientesPk00;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  dsnap,
+  vclx,
+  visualclx,
+  bdertl,
+  dsnapcon,
+  dclmid,
+  vcldb,
+  VclSmp,
+  oaSISPk8,
+  fc4000v7,
+  rbDB77,
+  rbRCL77,
+  rbBDE77,
+  rbIDE77,
+  ip4000clientvcl7,
+  ip4000v7,
+  dcldb,
+  vcldesigner,
+  designide,
+  vclactnband,
+  designdgm,
+  dclstd;
+
+contains
+  CLIE1000 in '..\MaestroClientesVentas\CLIE1000.pas' {FFiltroClientes};
+
+end.

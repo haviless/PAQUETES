@@ -1,0 +1,65 @@
+package CXPPk02;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  dsnap,
+  vclx,
+  bdertl,
+  vcldb,
+  VclSmp,
+  ip4000clientvcl7,
+  ip4000v7,
+  tee,
+  rbRCL77,
+  rbBDE77,
+  rbDB77,
+  rbDBDE77,
+  rbDAD77,
+  rbIDE77,
+  fc4000v7,
+  dclmid,
+  dcldb,
+  vcldesigner,
+  designide,
+  vclactnband,
+  designdgm,
+  dclstd,
+  dsnapcon,
+  vcljpg,
+  visualclx,
+  CXPPk00,
+  oaSISPk8,
+  oaLIBConta,
+  PROVPK00,
+  xtradev;
+
+contains
+  CxP001 in '..\CXPCliente\CxP001.pas' {FPrincipal};
+
+end.

@@ -1,0 +1,70 @@
+package CNTPk02;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  dclmid,
+  rbIDE77,
+  rbBDE77,
+  rbDB77,
+  dbrtl,
+  bdertl,
+  vcldb,
+  VclSmp,
+  vclx,
+  ip4000clientvcl7,
+  dsnap,
+  ip4000v7,
+  rbRCL77,
+  dsnapcon,
+  vcljpg,
+  fc4000v7,
+  dcldb,
+  vcldesigner,
+  designide,
+  vclactnband,
+  designdgm,
+  dclstd,
+  adortl,
+  dbexpress,
+  CNTPk00,
+  oaSISPk8,
+  oaLIBConta;
+
+contains
+  oaCN2000 in '..\CNTCliente\oaCN2000.pas' {FRegistro},
+  CNT204 in '..\CNTCliente\CNT204.pas' {FActualizacion},
+  CNT205 in '..\CNTCliente\CNT205.pas' {FDifCambio},
+  CNT207 in '..\CNTCliente\CNT207.PAS' {FCierrePer},
+  CNT260 in '..\CNTCliente\CNT260.PAS' {FTransferenciaDema},
+  CNT263 in '..\CNTCliente\CNT263.pas' {FGenConsol},
+  CNT206 in '..\CNTCliente\CNT206.pas' {FCierreAno},
+  CNT292 in '..\CNTCliente\CNT292.pas' {FOficios},
+  CNT290 in '..\CNTCliente\CNT290.pas' {FTelecredito},
+  CNT230 in '..\CNTCLIENTE\CNT230.pas' {FConcBanCob};
+
+end.

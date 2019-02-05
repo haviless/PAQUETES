@@ -1,0 +1,62 @@
+package ALMPk00;
+
+{$R *.res}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl,
+  vcl,
+  dbrtl,
+  dsnap,
+  bdertl,
+  dsnapcon,
+  dclmid,
+  vcldb,
+  dcldb,
+  vcldesigner,
+  designide,
+  vclactnband,
+  vclx,
+  designdgm,
+  dclstd,
+  ip4000clientvcl7,
+  ip4000v7,
+  fc4000v7,
+  rbDB77,
+  rbRCL77,
+  VclSmp,
+  rbBDE77,
+  rbIDE77,
+  dclOfficeXP,
+  oaSISPk8,
+  oaLIBConta,
+  visualclx,
+  DMmsgDlgs;
+
+contains
+  ALMDM1 in '..\ALMCliente\ALMDM1.pas' {DMALM: TDataModule},
+  oaIN0000 in '..\ALMCliente\oaIN0000.pas' {FINIni},
+  ALM020 in '..\ALMCliente\ALM020.pas' {FCtrlAcceso};
+
+end.
